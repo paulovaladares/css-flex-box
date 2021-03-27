@@ -1,7 +1,14 @@
+/* px vs rem
+A typical method is to set the HTML font-size to 62.5%.
+That’s because 62.5% of 16px (typical default browser font-size) is 10px.
+That would still make 1.6rem = 16px. 
+*/
+
 :root {
   --black-dark: #222;
   --blue-light: #2c70ff;
   --blue-dark: #122ab2;
+  --grey: #7c7c7c;
 }
 
 body,
@@ -40,11 +47,11 @@ img {
 /* GERAL */
 
 .container-center {
-  max-width: 960px;
+  max-width: 60rem;
   margin: 0 auto;
 }
 
-/* Superinfo */
+/* SUPERINFO */
 
 .superinfo-container {
   background: var(--blue-dark);
@@ -52,7 +59,7 @@ img {
 
 .superinfo {
   color: white;
-  padding-top: 10px;
+  padding-top: 0.625rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -64,10 +71,10 @@ img {
 
 .superinfo p,
 .superinfo a {
-  margin: 0 10px 10px 10px;
+  margin: 0 0.625rem 0.625rem 0.625rem;
 }
 
-/* Menu */
+/* MENU */
 
 .menu-container {
   background: var(--blue-light);
@@ -75,7 +82,7 @@ img {
 }
 
 .menu {
-  padding: 15px 0;
+  padding: 0.937rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -89,7 +96,7 @@ img {
 .logo {
   font-size: 2.25rem;
   font-weight: bold;
-  margin: 0 10px;
+  margin: 0 0.625rem;
 }
 
 .menu-nav ul {
@@ -100,7 +107,7 @@ img {
 .menu-nav a {
   font-size: 1.25rem;
   display: block;
-  padding: 10px;
+  padding: 0.625rem;
   transition: 0.3s;
 }
 
@@ -108,10 +115,41 @@ img {
   color: var(--blue-dark);
 }
 
-/* Introdução */
+/* INTRODUÇÃO */
 
 .intro {
   font-size: 3rem;
   line-height: 1;
-  padding: 60px 10px;
+  padding: 3.75rem 0.625rem;
+}
+
+/* SOBRE */
+
+.sobre {
+  border-top: 0.125rem solid var(--blue-light);
+  padding: 3.75rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sobre-info {
+  flex: 2 1 18.75rem; /* grow shrink basis */
+  margin: 0 0.625rem;
+}
+
+.sobre-info h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.sobre-info p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  color: var(--grey);
+}
+
+.sobre-img {
+  flex: 1 1 10rem;
+  margin: 0 0.625rem;
 }
