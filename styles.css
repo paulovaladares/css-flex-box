@@ -290,3 +290,47 @@ img {
     order: -1;
   }
 }
+
+/* QUALIDADE */
+
+.qualidade {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.qualidade-item {
+  flex: 1 1 18.75rem;
+  margin: 1.25rem 0.625rem;
+}
+
+.qualidade-item h2 {
+  font-size: 2.25rem;
+  color: var(--gray);
+  margin-bottom: 1.25rem;
+}
+
+.qualidade-item h2::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 1.875rem;
+  margin-right: 0.625rem;
+}
+
+.qualidade-item:nth-of-type(3n + 1) h2::before {
+  background: var(--purple);
+}
+
+.qualidade-item:nth-of-type(3n + 2) h2::before {
+  background: var(--pink);
+}
+
+.qualidade-item:nth-of-type(3n + 3) h2::before {
+  background: var(--blue-lighter);
+}
+
+.qualidade-item p {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: var(--gray);
+}
