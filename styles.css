@@ -37,14 +37,20 @@ img {
   box-sizing: border-box;
 }
 
+/* GERAL */
+
+.container-center {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 /* Superinfo */
+
 .superinfo-container {
   background: var(--blue-dark);
 }
 
 .superinfo {
-  max-width: 960px;
-  margin: 0 auto;
   color: white;
   padding-top: 10px;
   display: flex;
@@ -62,9 +68,6 @@ img {
 }
 
 /* Menu */
-.menu-container * {
-  /* border: 1px solid; */
-}
 
 .menu-container {
   background: var(--blue-light);
@@ -72,8 +75,6 @@ img {
 }
 
 .menu {
-  max-width: 960px;
-  margin: 0 auto;
   padding: 15px 0;
   display: flex;
   flex-wrap: wrap;
@@ -105,4 +106,12 @@ img {
 
 .menu-nav a:hover {
   color: var(--blue-dark);
+}
+
+/* Introdução */
+
+.intro {
+  font-size: 3rem;
+  line-height: 1;
+  padding: 60px 10px;
 }
