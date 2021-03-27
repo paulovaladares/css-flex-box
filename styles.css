@@ -1,5 +1,7 @@
 :root {
-  --font-color: #222;
+  --black-dark: #222;
+  --blue-light: blue;
+  --blue-dark: #122ab2;
 }
 
 body,
@@ -33,4 +35,28 @@ img {
 
 * {
   box-sizing: border-box;
+}
+
+/* Super info BG */
+.superinfo-container {
+  background: var(--blue-dark);
+}
+
+.superinfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+  color: white;
+  padding-top: 10px;
+}
+
+.superinfo a {
+  color: white;
+}
+
+.superinfo p,
+.superinfo a {
+  margin: 0 10px 10px 10px;
 }
